@@ -1,0 +1,149 @@
+/* Apply Doctor Page Styles */
+.apply-doctor-container {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Title */
+.apply-doctor-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+/* Section Headings */
+.section-heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+.ant-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Labels */
+.ant-form-item-label {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #333 !important;
+}
+
+/* Input Fields */
+.ant-input,
+.ant-picker {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.ant-input:focus,
+.ant-input:hover,
+.ant-picker:hover {
+  border-color: #4a90e2 !important;
+  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+}
+
+/* Time Picker */
+.ant-picker {
+  width: 100%;
+}
+
+/* Submit Button */
+.form-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: #4a90e2;
+  border: none;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+}
+
+.form-btn:hover {
+  background: #3a78c2;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .apply-doctor-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-heading {
+    font-size: 1.4rem;
+  }
+
+  .ant-input, .ant-picker {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .form-btn {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .apply-doctor-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-heading {
+    font-size: 1.3rem;
+  }
+
+  .ant-form {
+    padding: 15px;
+  }
+
+  .ant-input, .ant-picker {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .form-btn {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .apply-doctor-container {
+    padding: 15px;
+  }
+
+  .apply-doctor-title {
+    font-size: 1.3rem;
+  }
+
+  .section-heading {
+    font-size: 1.2rem;
+  }
+
+  .ant-form {
+    padding: 10px;
+  }
+
+  .ant-input, .ant-picker {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .form-btn {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}

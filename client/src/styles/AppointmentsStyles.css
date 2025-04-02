@@ -1,0 +1,126 @@
+/* Appointments Page Styles */
+.appointments-container {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Title Styling */
+.appointments-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #4a90e2;
+  margin-bottom: 20px;
+}
+
+/* Table Styling */
+.ant-table {
+  background: white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background: #4a90e2 !important;
+  color: white !important;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table Cell Styling */
+.ant-table-tbody > tr > td {
+  text-align: center;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+/* Status Color */
+.status-pending {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.status-approved {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.status-rejected {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+  .appointments-title {
+    font-size: 1.8rem;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .appointments-title {
+    font-size: 1.5rem;
+  }
+
+  .ant-table {
+    padding: 5px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+
+/* Stack table for smaller screens */
+@media (max-width: 576px) {
+  .appointments-container {
+    padding: 15px;
+  }
+
+  .appointments-title {
+    font-size: 1.3rem;
+  }
+
+  .ant-table {
+    box-shadow: none;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+
+  .ant-table-thead {
+    display: none; /* Hide table headers */
+  }
+
+  .ant-table-tbody > tr {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid #ddd;
+    padding: 10px;
+  }
+
+  .ant-table-tbody > tr > td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  .ant-table-tbody > tr > td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #4a90e2;
+    margin-right: 10px;
+  }
+}

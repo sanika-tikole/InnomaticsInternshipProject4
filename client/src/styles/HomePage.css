@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #5989bf;
+    --secondary-color: #ffffff;
+    --hover-color: #3a78c2;
+    --sidebar-bg: #1e1e2f;
+    --text-color: #ffffff;
+    --card-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  /* HomePage Layout */
+  .home-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f4f6f9;
+    min-height: 100vh;
+  }
+  
+  /* Title */
+  .home-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Doctor Cards Grid */
+  .doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1800px;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  /* Doctor Card */
+  .doctor-card {
+    background: var(--card-bg);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .doctor-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px var(--shadow-color);
+  }
+  
+  /* Doctor Name */
+  .doctor-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--sidebar-bg);
+    margin-bottom: 5px;
+  }
+  
+  /* Doctor Details */
+  .doctor-details {
+    font-size: 1rem;
+    color: #333333;
+  }
+  
+  /* Button */
+  .view-profile {
+    margin-top: 10px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .view-profile:hover {
+    background: var(--hover-color);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .home-title {
+      font-size: 1.8rem;
+    }
+  
+    .doctor-grid {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  
+    .doctor-name {
+      font-size: 1.3rem;
+    }
+  
+    .doctor-details {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .home-title {
+      font-size: 1.5rem;
+    }
+  
+    .doctor-grid {
+      gap: 15px;
+      padding: 5px;
+    }
+  
+    .doctor-card {
+      padding: 12px;
+    }
+  
+    .doctor-name {
+      font-size: 1.2rem;
+    }
+  
+    .doctor-details {
+      font-size: 0.9rem;
+    }
+  
+    .view-profile {
+      font-size: 0.9rem;
+      padding: 7px 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .home-title {
+      font-size: 1.3rem;
+    }
+  
+    .doctor-grid {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    .doctor-card {
+      padding: 10px;
+    }
+  
+    .doctor-name {
+      font-size: 1.1rem;
+    }
+  
+    .doctor-details {
+      font-size: 0.85rem;
+    }
+  
+    .view-profile {
+      font-size: 0.85rem;
+      padding: 6px 10px;
+    }
+  }

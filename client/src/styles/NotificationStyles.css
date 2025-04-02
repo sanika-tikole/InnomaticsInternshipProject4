@@ -1,0 +1,78 @@
+/* Notification Page Styles */
+.notification-container {
+    padding: 20px;
+    background: #f4f6f9;
+    min-height: 100vh;
+  }
+  
+  /* Title */
+  .notification-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #4a90e2;
+    margin-bottom: 20px;
+  }
+  
+  /* Tabs Styling */
+  .ant-tabs-tab {
+    font-size: 1.2rem !important;
+    font-weight: 600 !important;
+    color: #333 !important;
+  }
+  
+  .ant-tabs-tab-active {
+    color: #4a90e2 !important;
+  }
+  
+  .ant-tabs-tab:hover {
+    color: #3a78c2 !important;
+  }
+  
+  /* Notification Actions */
+  .notification-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  .notification-actions h4 {
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #4a90e2;
+    color: white;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .notification-actions h4:hover {
+    background: #3a78c2;
+  }
+  
+  /* Notification Cards */
+  .notification-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .notification-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Notification Message */
+  .notification-message {
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+  }
+  
+  .notification-message:hover {
+    color: #4a90e2;
+  }
+  
